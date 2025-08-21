@@ -1,0 +1,33 @@
+$font: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 1.25rem;
+}
+
+.header {
+  background: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+h1 {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
