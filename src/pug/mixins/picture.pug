@@ -1,0 +1,7 @@
+//- Використання: +picture('images/sample', 'Опис зображення', {width: 1200, height: 800})
+//- Очікується наявність у /dist/images: sample.jpg|png + sample.webp + sample.avif
+mixin picture(srcBase, alt, size)
+  picture
+    //- source(type="image/avif" srcset=`/${srcBase}.avif`)
+    source(type="image/webp" srcset=`/${srcBase}.webp`)
+    img(src=`/${srcBase}.jpg` alt=alt width=size && size.width ? size.width : false height=size && size.height ? size.height : false loading="lazy" decoding="async")

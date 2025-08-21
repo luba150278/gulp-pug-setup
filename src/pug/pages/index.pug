@@ -1,0 +1,8 @@
+extends ../layouts/base.pug
+include ../mixins/picture.pug
+
+
+block content
+  .container
+    p Home.
+    +picture('images/sample', 'Демонстраційне зображення', {width: 1200, height: 800})
